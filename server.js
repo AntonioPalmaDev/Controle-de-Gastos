@@ -7,7 +7,7 @@ form.addEventListener('submit', function(event) {
   const formData = new URLSearchParams();
   formData.append('data', form.data.value);
   formData.append('categoria', form.categoria.value);
-  formData.append('valor', form.valor.value);
+  formData.append('valor', form.valor.value.replace('.', ','));
   formData.append('descricao', form.descricao.value);  // Novo campo
 
   fetch('https://script.google.com/macros/s/AKfycbzaUJM1BIr5D-fc0FQMdzlGUUH0ygCCc-SkXreuSBKluQKRFU6nAcHw8E7ThLF3GiId/exec', {
