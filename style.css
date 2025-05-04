@@ -103,3 +103,31 @@ button:hover{
     padding: 10px;
     margin-top: 50px;
   }
+
+  @media (max-width: 600px) {
+    .container {
+      padding: 1rem;
+      max-width: 95%;
+    }
+  
+    button, .open {
+      margin-top: 20px;
+      width: 100%;
+    }
+  .open {
+      margin-left: 25%;
+      width: 50%;
+    }
+    input{
+      width: 90%;
+
+    }
+    select{
+width: 97%;
+
+    }
+    #notificacao {
+      width: 50%;
+      left: 20%;
+    }
+  }
