@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Controle de Gastos</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+ 
+</head>
+<body>
+
+  <div class="container">
+    <h2>Planilha de Gastos</h2>
+     <form id="gastoForm">
+    <label>Data:
+      <input type="date" name="data" required>
+    </label>
+
+    <label>Categoria:
+      <select name="categoria" required>
+        <option value="Alimentação">Alimentação</option>
+        <option value="Transporte">Transporte</option>
+        <option value="Lazer">Lazer</option>
+        <option value="Saúde">Saúde</option>
+        <option value="Outros">Outros</option>
+      </select>
+    </label>
+
+    <label>Valor:
+      <input type="number" name="valor" step="0.01" required>
+    </label>
+    <label>Descrição:
+      <input type="text" name="descricao"  required>
+    </label>
+    <button type="submit">Enviar</button>
+  </form>
+
+</div>
+<div id="notificacao" class="oculto">
+  <span id="notificacao-icone">✔️</span>
+  <span id="notificacao-texto"></span>
+</div>
+<button class="open" onclick="window.open('https://docs.google.com/spreadsheets/d/18sOQ2bW92pj4Bq1miFjJoeBpHm-6kDaOmsXIcWAX8sI/edit?usp=sharing', '_blank')">
+  Ver Planilha
+</button>
+
+
+<script src="server.js" ></script>
+</body>
+</html>
